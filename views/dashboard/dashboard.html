@@ -1,0 +1,50 @@
+
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-12">
+            <h3 class="text-left" style="margin-top: 5px;margin-bottom: 5px">PP CONVERSION</h3>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="col-lg-4 col-md-8 col-sm-12">
+            <div class="form-group row">
+                <div class="col-12">
+                    <label>Số tiền muốn mua (XU MẼO):</label>
+                    <input type="text" class="meta-input-name form-control input-sm"
+                        ng-model="amount" placeholder="chọn lệnh bên dưới">
+                </div>
+                
+                <div class="col-12" style="padding-top: 20px; display: none">
+                    <label>Tỉ giá quy đổi của Paypal hiện tại 1 XU MẼO = {{ppratio | number:2 }} VNĐ</label>
+                    <input type="text" class="meta-input-value form-control input-sm"
+                        ng-model="ppratio" placeholder="Nhập tỉ giá">
+                </div>
+                
+                <div class="col-12" style="padding-top: 20px">
+                    <label class="label-primary">Số tiền VND: <strong>{{total | number:0}} đ</strong></label>
+                </div>
+                
+                <div class="col-12" style="margin-bottom:5px">
+                    <button class="btn btn-primary" ng-click="Calculate()">Tính lại</button>
+                </div>
+
+                <div style="margin-top: 5px">&nbsp;</div>
+                <div class="col-12">
+                    <label class="label-primary">Nội dung ck: <strong>MUAPP [Số tiền PP] [Điện thoại] [TÊN]</strong></label>
+                    <label>Ví dụ: MUAPP 500 0919909909 MINH</label>
+
+                    <p style="color: #0461af">
+                        Bên mình tính rate động theo ngày, không fix cố định nên ae tính bằng form, được thì giao dịch. Bác nào muốn mua thì "cap lại màn hình tính này" và gửi inbox cho mình nhé.
+                    </p>
+                    <p>
+                        Lưu ý: chia ra thì rate có thể cao hơn rate ae hay mua một chút. Mua càng nhiều càng rẻ.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
